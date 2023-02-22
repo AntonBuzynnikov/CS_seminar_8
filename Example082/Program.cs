@@ -7,4 +7,7 @@ foreach(char c in str)
     if(c != '.') k++;
     else break;
 }
-System.Console.WriteLine($"Количество символов до точки: {k}");
+if(k == str.Length)
+    System.Console.WriteLine("В строке нет точки");
+else
+    System.Console.WriteLine($"Количество символов до точки: {k}");
